@@ -1,5 +1,5 @@
-1. Mean squared error  ve Explained variance score model değerlendirmede kullanılıyor.Mean squared error ne kadar az olursa ve Explained variance score
-ne kadar büyük se model okadar iyi.
+1. Mean squared error  ve Explained variance score model değerlendirmede kullanılıyor.Mean squared error ne kadar az olursa
+ve Explained variance score 1 e ne kadar yakınsa model o kadar iyi.
 2. Adaboost ile Algoritmaların performansını artırabiliyoruz.
 
 7. Let's evaluate the performance of decision tree regressor:
