@@ -1,2 +1,28 @@
 1. Mean squared error  ve Explained variance score model değerlendirmede kullanılıyor.Mean squared error ne kadar az olursa ve Explained variance score
 ne kadar büyük se model okadar iyi.
+2. Adaboost ile Algoritmaların performansını artırabiliyoruz.
+
+7. Let's evaluate the performance of decision tree regressor:
+y_pred_dt = dt_regressor.predict(X_test)
+mse = mean_squared_error(y_test, y_pred_dt)
+evs = explained_variance_score(y_test, y_pred_dt)
+print "\n#### Decision Tree performance ####"
+print "Mean squared error =", round(mse, 2)
+print "Explained variance score =", round(evs, 2)
+8. Now, let's evaluate the performance of AdaBoost:
+y_pred_ab = ab_regressor.predict(X_test)
+mse = mean_squared_error(y_test, y_pred_ab)
+evs = explained_variance_score(y_test, y_pred_ab)
+print "\n#### AdaBoost performance ####"
+print "Mean squared error =", round(mse, 2)
+print "Explained variance score =", round(evs, 2)
+
+Here is the output on the Terminal:
+#### Decision Tree performance ####
+Mean squared error = 14.79
+Explained variance score = 0.82
+#### AdaBoost performance ####
+Mean squared error = 7.54
+Explained variance score = 0.91
+The error is lower and the variance score is closer to 1 when we use AdaBoost as shown in the
+preceding output.
